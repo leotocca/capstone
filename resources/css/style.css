@@ -12,6 +12,7 @@ header {
     background-color: white;
     align-items: center;
     position: fixed;
+    top: 0;
     margin: 0px;
     z-index: 1;
     width: 100%;
@@ -57,8 +58,12 @@ nav ul {
   justify-content: flex-start;
 }
 
+.image {
+  width: 50%
+}
+
 .image img {
-  width: 60%;
+  width: 100%;
   height: auto;
   margin: 32px 24px;
 }
@@ -66,6 +71,7 @@ nav ul {
 .mainbanner .text {
   align-self: center;
   text-align: left;
+  margin-left: 80px;
 }
 
 .text h1 {
@@ -92,4 +98,120 @@ nav ul {
   color: lightgrey;
   margin: 8px 0px;;
   color: white;
+}
+
+/* Keep Practising */
+
+.keeppractising {
+  margin-top: 32px;
+  display: flex;
+}
+
+.keeppractising .column1 {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Column 1 */
+
+.column1 {
+  margin-left: 24px;
+  margin-right: 24px;
+  width: 50%;
+}
+
+.column1 img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 32px;
+}
+
+.column1 h2 {
+  font-size: 30px;
+  font-weight: bold;
+  color: darkgrey;
+  margin-bottom: 24px;
+}
+
+.quotemaker {
+  display: inline-block;
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+/* Column 2 */
+
+.column2 {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+
+.practisingcard {
+  display: flex;
+}
+
+.practisingcard img {
+  width: 35%;
+  height: 35%;
+  margin: 0px 16px 16px 16px;
+}
+
+.practisingcard img:nth-child(1n+0) {
+  margin-top: 16px;
+}
+
+.practisingcard h3 {
+  font-size: 20px;
+  font-weight: bold;
+  color: darkgrey;
+  margin-bottom: 14px;
+}
+
+.practisingcard .cardtitle {
+  font-size: 14px;
+  color: lightgrey;
+  margin-bottom: 14px;
+}
+
+.practisingcard .readmore {
+  font-size: 14px;
+  color: blue;
+}
+
+.cardstext {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Start learning */
+
+.learningtitle {
+  text-align: center;font-weight: bold;
+  font-size: 40px;
+  margin-bottom: 32px;
+  margin-top: 32px;
+  color: grey;
+}
+
+.careercards {
+  display: flex;
+  flex-direction: column;
+}
+
+.careercards img {
+  width: 350px;
+  height: auto;
+}
+
+.careercards1, .careecards2 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 32px;
+}
+
+.careercard {
+  display: flex;
+  flex-direction: column;
 }

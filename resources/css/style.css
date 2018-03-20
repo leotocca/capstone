@@ -92,13 +92,23 @@ nav ul {
   width: 100%;
   text-align: center;
   margin-top: 20px;
+  transition-duration: 0.4s;
 }
 
 .button span {
   display: inline-block;
   color: lightgrey;
-  margin: 8px 0px;;
+  padding: 12px 0px;
   color: white;
+}
+
+.button:hover {
+  border: 1px solid #7E7F7F;
+  background-color: #FCFFFF
+}
+
+.button span:hover {
+  color: #7E7F7F;
 }
 
 /* Keep Practising */
@@ -134,6 +144,11 @@ nav ul {
   font-weight: bold;
   color: #40403E;
   margin-bottom: 24px;
+}
+
+.practising-text {
+  width: 95%;
+  padding-left: 10px;
 }
 
 .quotemaker {
@@ -311,6 +326,7 @@ nav ul {
 
 .video-description {
   width: 80%;
+  padding-left: 10px;
 }
 
 .video-description h4 {
@@ -382,3 +398,5 @@ footer {
 .terms-privacy span {
   margin-left: 10px;
 }
+
+/* Responsive */

@@ -53,7 +53,7 @@ nav ul {
 
 .mainbanner {
   display: flex;
-  background-color: lightgrey;
+  background-color: #E3E5E5;
   margin-top: 64px;
   justify-content: flex-start;
 }
@@ -78,7 +78,7 @@ nav ul {
   font-weight: bold;
   font-size: 40px;
   margin-bottom: 10px;
-  color: grey;
+  color: #40403E;
 }
 
 .text .subheading {
@@ -87,7 +87,7 @@ nav ul {
 }
 
 .button {
-  background-color: darkgrey;
+  background-color: #40403E;
   width: 100%;
   text-align: center;
   margin-top: 20px;
@@ -105,7 +105,7 @@ nav ul {
 .keeppractising {
   padding-top: 32px;
   display: flex;
-  background-color: lightgrey;
+  background-color: #FCFFFF;
 }
 
 .keeppractising .column1 {
@@ -130,7 +130,7 @@ nav ul {
 .column1 h2 {
   font-size: 30px;
   font-weight: bold;
-  color: darkgrey;
+  color: #40403E;
   margin-bottom: 24px;
 }
 
@@ -139,6 +139,11 @@ nav ul {
   margin-top: 32px;
   margin-bottom: 32px;
   font-size: 13px;
+  color: #7E7F7F;
+}
+
+.subheading {
+  color: #7E7F7F;
 }
 
 /* Column 2 */
@@ -166,14 +171,15 @@ nav ul {
 .practisingcard h3 {
   font-size: 20px;
   font-weight: bold;
-  color: darkgrey;
+  color: #40403E;
   margin-bottom: 14px;
 }
 
 .practisingcard .cardtitle {
   font-size: 14px;
-  color: lightgrey;
   margin-bottom: 14px;
+  color: #7E7F7F;
+  line-height: 1.5em;
 }
 
 .practisingcard .readmore {
@@ -185,16 +191,26 @@ nav ul {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding-right: 16px;
+}
+
+.practisingcard:hover {
+  background-color: #E3E5E5;
 }
 
 /* Start learning */
 
-.learningtitle {
-  text-align: center;font-weight: bold;
+.startlearning {
+  background-color: #E3E5E5;
+}
+
+.learningtitle h2 {
+  text-align: center;
+  font-weight: bold;
   font-size: 40px;
   margin-bottom: 32px;
   margin-top: 32px;
-  color: grey;
+  color: #40403E;
 }
 
 .careercards {
@@ -206,19 +222,23 @@ nav ul {
 }
 
 .careercards img {
-  width: 350px;
+  width: 320px;
   height: auto;
 }
 
 .careercard {
   display: flex;
   flex-direction: column;
-  margin-top: 40px;
-  width: 350px;
+  margin-bottom: 40px;
+  padding: 0 15px;
+  width: 320px;
 }
 
 .careertext {
   padding-left: 16px;
+  padding-right: 16px;
+  background-color: white;
+  height: 180px;
 }
 
 .careertext h3 {
@@ -226,6 +246,7 @@ nav ul {
   font-weight: 600;
   padding-top: 16px;
   padding-bottom: 16px;
+  color: #40403E;
 }
 
 .courses, .careedescription {
@@ -235,8 +256,18 @@ nav ul {
 
 .courses {
   padding-top: 8px;
+  padding-bottom: 8px;
+  display: block;
+  font-weight: 200;
+  color: #7E7F7F;
+  font-size: 14px;
 }
 
 .careedescription {
   margin-bottom: 24px;
+  display: inline-block;
+  line-height: 1.5em;
+  font-weight: lighter;
+  color: #7E7F7F;
+  font-size: 14px;
 }

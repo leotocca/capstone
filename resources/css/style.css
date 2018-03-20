@@ -32,7 +32,7 @@ header {
   width: auto;
 }
 
-.logo .logoblack {
+.logo .logo-black {
   font-weight: bold;
   margin: 0px 3px;
 }
@@ -51,7 +51,7 @@ nav ul {
 
 /* Main banner */
 
-.mainbanner {
+.main-banner {
   display: flex;
   background-color: #E3E5E5;
   margin-top: 64px;
@@ -68,7 +68,7 @@ nav ul {
   margin: 32px 24px;
 }
 
-.mainbanner .text {
+.main-banner .text {
   align-self: center;
   text-align: left;
   margin-left: 80px;
@@ -84,6 +84,7 @@ nav ul {
 .text .subheading {
   color: grey;
   font-size: 20px;
+  line-height: 1.5em;
 }
 
 .button {
@@ -102,13 +103,14 @@ nav ul {
 
 /* Keep Practising */
 
-.keeppractising {
+.keep-practising {
   padding-top: 32px;
+  margin-bottom: 32px;
   display: flex;
   background-color: #FCFFFF;
 }
 
-.keeppractising .column1 {
+.keep-practising .column1 {
   display: flex;
   flex-direction: column;
 }
@@ -154,66 +156,68 @@ nav ul {
   width: 40%;
 }
 
-.practisingcard {
+.practising-card {
   display: flex;
 }
 
-.practisingcard img {
+.practising-card img {
   width: 35%;
   height: 35%;
   margin: 0px 16px 16px 16px;
 }
 
-.practisingcard img:nth-child(1n+0) {
+.practising-card img:nth-child(1n+0) {
   margin-top: 16px;
 }
 
-.practisingcard h3 {
+.practising-card h3 {
   font-size: 20px;
   font-weight: bold;
   color: #40403E;
   margin-bottom: 14px;
 }
 
-.practisingcard .cardtitle {
+.practising-card .card-title {
   font-size: 14px;
   margin-bottom: 14px;
   color: #7E7F7F;
   line-height: 1.5em;
 }
 
-.practisingcard .readmore {
+.practising-card .readmore {
   font-size: 14px;
   color: blue;
 }
 
-.cardstext {
+.cards-text {
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding-right: 16px;
 }
 
-.practisingcard:hover {
+.practising-card:hover {
   background-color: #E3E5E5;
 }
 
 /* Start learning */
 
-.startlearning {
+.start-learning {
   background-color: #E3E5E5;
 }
 
-.learningtitle h2 {
+.learning-title {
+  padding: 32px 0px;
+}
+
+.learning-title h2 {
   text-align: center;
   font-weight: bold;
   font-size: 40px;
-  margin-bottom: 32px;
-  margin-top: 32px;
   color: #40403E;
 }
 
-.careercards {
+.career-cards {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
@@ -221,12 +225,12 @@ nav ul {
   margin-right: 72px;
 }
 
-.careercards img {
+.career-cards img {
   width: 320px;
   height: auto;
 }
 
-.careercard {
+.career-card {
   display: flex;
   flex-direction: column;
   margin-bottom: 40px;
@@ -234,22 +238,22 @@ nav ul {
   width: 320px;
 }
 
-.careertext {
+.career-text {
   padding-left: 16px;
   padding-right: 16px;
   background-color: white;
   height: 180px;
 }
 
-.careertext h3 {
+.career-text h3 {
   font-size: 20px;
   font-weight: 600;
-  padding-top: 16px;
+  padding-top: 24px;
   padding-bottom: 16px;
   color: #40403E;
 }
 
-.courses, .careedescription {
+.courses, .career-description {
   font-size: 15px;
   font-weight: lighter;
 }
@@ -263,11 +267,118 @@ nav ul {
   font-size: 14px;
 }
 
-.careedescription {
+.career-description {
   margin-bottom: 24px;
   display: inline-block;
   line-height: 1.5em;
   font-weight: lighter;
   color: #7E7F7F;
   font-size: 14px;
+}
+
+
+/* Thesis Exhibit */
+
+.thesis-exhibit {
+  padding: 60px 0px;
+  background-color: #FCFFFF;
+}
+
+.thesis-exhibit h2 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 40px;
+  color: #40403E;
+  margin-bottom: 60px;
+}
+
+.thesis-flex {
+  display: flex;
+}
+
+.column-video1 {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  margin-left: 40px;
+}
+
+.column-video2 {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+
+.video-description {
+  width: 80%;
+}
+
+.video-description h4 {
+  font-size: 20px;
+  font-weight: 600;
+  padding-top: 24px;
+  padding-bottom: 16px;
+  color: #40403E;
+}
+
+.video-description span {
+  color: #7E7F7F;
+  line-height: 1.5em;
+}
+
+.video-card {
+  display: flex;
+}
+
+.video-card:hover {
+  background-color: #E3E5E5;
+}
+
+.video-card img {
+  width: 35%;
+  height: 35%;
+  padding: 16px;
+}
+
+.video-card-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 45%;
+  line-height: 1.5em;
+}
+
+.video-card h3 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #40403E;
+  margin-bottom: 14px;
+}
+
+/* Footer */
+
+footer {
+  display: flex;
+  border-top: 1px solid #F5F7F7;
+  height: 50px;
+}
+
+.copyright {
+  flex-grow: 1;
+  padding-left: 24px;
+  padding-top: 16px;
+  font-size: 12px;
+  color: #D1D4D4;
+}
+
+.terms-privacy {
+  display: inline-block;
+  margin-right: 20px;
+  font-size: 12px;
+  padding-top: 16px;
+  color: #D1D4D4;
+}
+
+.terms-privacy span {
+  margin-left: 10px;
 }

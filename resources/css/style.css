@@ -107,9 +107,6 @@ nav a:hover {
   text-align: center;
   margin-top: 20px;
   transition-duration: 0.4s;
-}
-
-.button span {
   display: inline-block;
   color: lightgrey;
   padding: 12px 0px;
@@ -118,7 +115,8 @@ nav a:hover {
 
 .button:hover {
   border: 1px solid #7E7F7F;
-  background-color: #FCFFFF
+  background-color: #FCFFFF;
+  color: #40403E;
 }
 
 /* Keep Practising */

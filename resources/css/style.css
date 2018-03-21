@@ -44,10 +44,21 @@ header {
 
 nav span {
   margin-left: 16px;
+  display: inline;
 }
 
 nav ul {
   margin-right: 24px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #40403E;
+  transition-duration: 300ms
+}
+
+nav a:hover {
+  color: #E3E5E5;
 }
 
 
@@ -169,35 +180,35 @@ nav ul {
   width: 40%;
 }
 
-.practising-card {
+.practising-card-desktop {
   display: flex;
 }
 
-.practising-card img {
+.practising-card-desktop img {
   width: 35%;
   height: 35%;
   margin: 0px 16px 16px 16px;
 }
 
-.practising-card img:nth-child(1n+0) {
+.practising-card-desktop img:nth-child(1n+0) {
   margin-top: 16px;
 }
 
-.practising-card h3 {
+.practising-card-desktop h3 {
   font-size: 20px;
   font-weight: bold;
   color: #40403E;
   margin-bottom: 14px;
 }
 
-.practising-card .card-title {
+.practising-card-desktop .card-title {
   font-size: 14px;
   margin-bottom: 14px;
   color: #7E7F7F;
   line-height: 1.5em;
 }
 
-.practising-card .readmore {
+.practising-card-desktop .readmore {
   font-size: 14px;
   color: blue;
 }
@@ -209,7 +220,7 @@ nav ul {
   padding-right: 16px;
 }
 
-.practising-card:hover {
+.practising-card-desktop:hover {
   background-color: #E3E5E5;
 }
 
@@ -230,7 +241,7 @@ nav ul {
   color: #40403E;
 }
 
-.career-cards {
+.career-cards-desktop {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
@@ -238,7 +249,7 @@ nav ul {
   margin-right: 72px;
 }
 
-.career-cards img {
+.career-cards-desktop img {
   width: 320px;
   height: auto;
 }
@@ -305,7 +316,7 @@ nav ul {
   margin-bottom: 60px;
 }
 
-.thesis-flex {
+.thesis-flex-desktop {
   display: flex;
 }
 
@@ -403,23 +414,179 @@ footer {
   .menu-mobile {
     display: none;
   }
+
+  .practising-card-mobile {
+    display: none;
+  }
+
+  .career-cards-mobile {
+    display: none;
+  }
+
+  .thesis-video-mobile {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 480px){
+
+  /* Navigation */
+
   .menu-desktop {
     display: none;
   }
 
   .menu-mobile {
+    display: block;
     height: 64px;
     background-color: white;
     display: flex;
     align-items: center;
+    position: fixed;
+    top: 0;
   }
 
   .menu-mobile ul {
     display: flex;
     justify-content: space-around;
+  }
+
+  /* Main Banner */
+
+  .main-banner {
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+  }
+
+  .main-banner .image {
+    width: 100%;
+    margin: 0px;
+  }
+
+  .main-banner img {
+    width: 100%;
+    height: auto;
+    margin: 0px;
+  }
+
+  .main-banner .text {
+    margin: 32px 16px;
+  }
+
+  .main-banner h1 {
+    font-size: 30px;
+  }
+
+  .main-banner .subheading {
+    font-size: 17px;
+  }
+
+  .main-banner .button {
+    width: 100%;
+  }
+
+  /* Keep Practising */
+
+  .keep-practising .column1 {
+    display: none;
+  }
+
+  .keep-practising .column2 {
+    width: 100%;
+    margin: 0px 16px 0px 16px;
+  }
+
+  .practising-card-desktop {
+    display: none;
+  }
+
+  .practising-card-mobile {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-bottom: 30px;
+  }
+
+  .practising-card-mobile img {
+    width: 100%;
+    height: auto;
+  }
+
+  .practising-card-mobile .cards-text {
+    padding: 0px 10px;
+  }
+
+  .practising-card-mobile h3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #40403E;
+    margin-bottom: 14px;
+    margin-top: 14px;
+  }
+
+  .practising-card-mobile .card-title {
+    font-size: 14px;
+    margin-bottom: 14px;
+    color: #7E7F7F;
+    line-height: 1.5em;
+  }
+
+  .practising-card-mobile .readmore {
+    font-size: 14px;
+    color: blue;
+  }
+
+  /* Start Learning */
+
+  .start-learning {
+    background-color: #FCFFFF;
+    border-top: 0.5px dotted #E3E5E5;
+  }
+
+  .learning-title h2 {
+    font-size: 30px;
+  }
+
+  .career-cards-desktop {
+    display: none;
+  }
+
+  .career-cards-mobile {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 32px;
+  }
+
+  .career-card-mobile {
+    margin: 8px 16px 0px 16px;
+  }
+
+  .career-card-mobile h3 {
+    font-size: 20px;
+    font-weight: 600;
+    padding: 16px 0px 20px 16px;
+    color: #40403E;
+    background-color: #E3E5E5;
+  }
+
+  /* Thesis Exhibit */
+
+  .thesis-exhibit {
+    border-top: 0.5px dotted #E3E5E5;
+  }
+
+  .thesis-exhibit h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+
+  .thesis-flex-desktop {
+    display: none;
+  }
+
+  .terms-privacy {
+    display: none;
   }
 
 }

@@ -23,6 +23,7 @@ header {
 .menu-desktop {
   display: flex;
   align-items: center;
+  width: 100%;
 }
 
 .logo {
@@ -437,6 +438,7 @@ footer {
   }
 
   .menu-mobile {
+    width: 100%;
     display: block;
     height: 64px;
     background-color: white;
@@ -447,6 +449,7 @@ footer {
   }
 
   .menu-mobile ul {
+    width: 100%;
     display: flex;
     justify-content: space-around;
   }
